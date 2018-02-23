@@ -35,6 +35,8 @@ setup(
     keywords='cli',
     install_requires=[
         'click',
+        'pathspec >=0.5.3',
+        'pyyaml',
     ],
     setup_requires=[
         'pytest-runner',

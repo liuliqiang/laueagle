@@ -1,7 +1,7 @@
 from datetime import datetime
 
 __title__ = 'laueagle'
-__version__ = '0.0.2',
+__version__ = '0.0.3',
 __author__ = 'Liqiang Lau'
 __author_email__ = 'liqianglau@outlook.com'
 __license__ = 'MIT'
