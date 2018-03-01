@@ -25,3 +25,8 @@ License
 -------
 
 MIT
+
+Thanks
+------
+
+https://yamllint.readthedocs.io/en/stable/index.html

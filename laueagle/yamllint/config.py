@@ -43,7 +43,7 @@ class YamlLintConfig(object):
         return self.ignore and self.ignore.match_file(filepath)
 
     def enabled_rules(self, filepath):
-        return [yamllint.rules.get(id) for id, val in self.rules.items()
+        return [rules.get(id) for id, val in self.rules.items()
                 if val is not False and (
                     filepath is None or 'ignore' not in val or
                     not val['ignore'].match_file(filepath))]
@@ -94,7 +94,7 @@ class YamlLintConfig(object):
     def validate(self):
         for id in self.rules:
             try:
-                rule = yamllint.rules.get(id)
+                rule = rules.get(id)
             except Exception as e:
                 raise YamlLintConfigError('invalid config: %s' % e)
 
