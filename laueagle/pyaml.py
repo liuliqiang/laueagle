@@ -46,7 +46,7 @@ def yaml_lint(filepath):
 
 
 @click.command('Yaml formater')
-@click.option('-f', '--filepath', type=str, required=True,help='Yaml file path for lint',)
+@click.option('-f', '--filepath', type=str, required=True,help='Yaml file path for format',)
 @click.option('-r', '--replace', type=bool, required=False, default=True, help='Output formatted file replace old',)
 @click.option('-n', '--newfile', type=str, required=False, default='./formatted.yml', help='Formatted new file',)
 def yaml_format(filepath, replace, newfile):
